@@ -1,0 +1,32 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "authentication": {
+    "entity": null,
+    "service": null,
+    "secret": "7J4jaN/RXn7+dDw51rrrkqGr/hQ=",
+    "authStrategies": [
+      "auth0"
+    ],
+    "jwtOptions": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://yourdomain.com",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "auth0": {
+      "create": false,
+      "autoregister": false,
+      "domain": "auth.motionbank.org"
+    }
+  },
+  "mongodb": "mongodb://localhost:27017/url_shortener"
+}
